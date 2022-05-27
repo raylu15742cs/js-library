@@ -2,12 +2,14 @@
 let bookcounter = 0;
 let myLibrary = [];
 
-function Book(title, author, pages) {
-  // the constructor...
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = "no";
+
+
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages
+    }
 }
 const addbooktime = document.getElementById("addbook");
 addbooktime.addEventListener("click", function(){
